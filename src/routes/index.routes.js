@@ -1,0 +1,20 @@
+import { Router } from "express";
+import authRoutes from "./auth.routes.js";
+import addressRoutes from "./address.routes.js";
+import orderRoutes from "./order.routes.js";
+import salesRoutes from "./sales.routes.js";
+import paymentRoutes from "./paymentGateway.routes.js";
+import productRoutes from "./product.routes.js";
+import subcategories from "./subcategories.routes.js";
+import carts from "./cart.routes.js";
+
+const router = Router();
+router.use("/auth", authRoutes);
+router.use("/address", addressRoutes);
+router.use("/order", orderRoutes);
+router.use("/sales", salesRoutes);
+router.use("/paymentmethod", paymentRoutes);
+router.use("/product", productRoutes);
+router.use("/subcategories", subcategories);
+router.use("/carts", carts);
+export default router;
