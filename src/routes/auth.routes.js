@@ -8,7 +8,6 @@ import {
   updateUser,
   delAll,
 } from "../controllers/auth.controller.js";
-import adminCheck from "../utils/admincheck.js";
 
 const router = express.Router();
 

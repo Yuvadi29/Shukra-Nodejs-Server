@@ -1,5 +1,3 @@
-// adminCheck.js
-
 import User from "../models/user.schema.js"; // Import your User model
 import CustomError from "./customError.js";
 
